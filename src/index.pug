@@ -1,7 +1,28 @@
-- var name = '@impulse'
-doctype html
-html
-  head
-    title Example
-  body
-    h1 Webpack 4 PUG/SASS config by #{name}
+extends layout
+block content
+  header
+    .menu
+      .navbar-wrapper
+        .container
+          .navwrapper
+            .navbar.navbar-inverse.navbar-static-top
+              .container
+                .navArea
+                  .navbar-collapse.collapse
+                    ul.nav.navbar-nav
+                      li.menuItem.active
+                        a(href='#wrapper') Home
+                      li.menuItem
+                        a(href='#aboutus') About Us
+                      li.menuItem
+                        a(href='#specialties') Skills
+                      li.menuItem
+                        a(href='#gallery') Portfolio
+                      li.menuItem
+                        a(href='#feedback') Education
+                      li.menuItem
+                        a(href='#contact') Contact
+  section.gallery
+    .container
+      .heading.text-center
+        h1.text-info hello

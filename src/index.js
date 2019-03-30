@@ -1,6 +1,10 @@
-import html from "./index.pug"
+
 // Import styles
-import style from "./styles/main.sass";
+//import style from "./styles/main.sass";
+import style from "./css/style.sass";
+
 // Import scripts
-import script from "./scripts/plugin.js";
+import script from "./js/main.js";
+
+
 console.log('all files loaded');
