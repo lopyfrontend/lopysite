@@ -40,7 +40,12 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: "./src/index.pug",
-      filename: "./index.html"
+      filename: "./index.html",
+
+      //how to use in pug
+      templateParameters: {
+        'foo': 'bar!!!'
+      }
     }),
     new HtmlWebPackPlugin({
       template: "./src/404.pug",
